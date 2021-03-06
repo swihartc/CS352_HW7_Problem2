@@ -10,7 +10,9 @@ def valid_input(x):
     return x
 
 def div_400(x):
-    pass
+    if x % 400 == 0:
+        return True
+    return False
 
 def div_100(x):
     pass
