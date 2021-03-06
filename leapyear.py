@@ -9,6 +9,18 @@ def valid_input(x):
         return None
     return x
 
+def div_400(x):
+    pass
+
+def div_100(x):
+    pass
+def div_4(x):
+    pass
+
 
 if __name__ == '__main__':
-    leapyear()
+    while True:
+        x = input("Enter a year: ")
+        if valid_input(x) != None:
+            break
+        print("Invalid Input. Try again")
