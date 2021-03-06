@@ -15,7 +15,9 @@ def div_400(x):
     return False
 
 def div_100(x):
-    pass
+    if x % 100 == 0:
+        return True
+    return False
 def div_4(x):
     pass
 
