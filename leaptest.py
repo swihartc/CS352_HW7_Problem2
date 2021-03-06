@@ -27,5 +27,13 @@ class TestCase(unittest.TestCase):
         self.assertEqual(leapyear.div_4(0),True)
         self.assertEqual(leapyear.div_4(5),False)
         self.assertEqual(leapyear.div_4(1),False)
+    def test_prog(self):
+        self.assertEqual(leapyear.leap_year(4),True)
+        self.assertEqual(leapyear.leap_year(8),True)
+        self.assertEqual(leapyear.leap_year(0),True)
+        self.assertEqual(leapyear.leap_year(5),False)
+        self.assertEqual(leapyear.leap_year(400),True)
+        self.assertEqual(leapyear.leap_year(100),False)
+        self.assertEqual(leapyear.leap_year(200),False)
 if __name__ == '__main__':
     unittest.main()
