@@ -29,8 +29,13 @@ def leap_year(x):
     return False
 
 if __name__ == '__main__':
+    x = None
     while True:
         x = input("Enter a year: ")
         if valid_input(x) != None:
             break
         print("Invalid Input. Try again")
+    if leap_year(x):
+        print("Is a leap year")
+    else:
+        print("Not a leap year")
