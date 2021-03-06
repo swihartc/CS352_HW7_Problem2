@@ -21,5 +21,11 @@ class TestCase(unittest.TestCase):
         self.assertEqual(leapyear.div_100(0),True)
         self.assertEqual(leapyear.div_100(101),False)
         self.assertEqual(leapyear.div_100(1),False)
+    def test_div_4(self):
+        self.assertEqual(leapyear.div_4(4),True)
+        self.assertEqual(leapyear.div_4(8),True)
+        self.assertEqual(leapyear.div_4(0),True)
+        self.assertEqual(leapyear.div_4(5),False)
+        self.assertEqual(leapyear.div_4(1),False)
 if __name__ == '__main__':
     unittest.main()
