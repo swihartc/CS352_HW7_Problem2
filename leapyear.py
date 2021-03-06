@@ -1,6 +1,5 @@
 
-def leap_year():
-    pass
+
 
 def valid_input(x):
     if type(x) != int:
@@ -24,6 +23,10 @@ def div_4(x):
         return True
     return False
 
+def leap_year(x):
+    if div_400(x) or (div_4(x) and not div_100(x)):
+        return True
+    return False
 
 if __name__ == '__main__':
     while True:
