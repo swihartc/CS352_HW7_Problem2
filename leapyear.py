@@ -18,8 +18,11 @@ def div_100(x):
     if x % 100 == 0:
         return True
     return False
+
 def div_4(x):
-    pass
+    if x % 4 == 0:
+        return True
+    return False
 
 
 if __name__ == '__main__':
